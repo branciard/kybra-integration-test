@@ -1,11 +1,11 @@
-from kybra import query
+from kybra import query,ic,void
 
 import iscc_core as iscccore
 
+metaCodet= {}
+
 @query
-def testIscccoreLib() -> str:
-   # meta_code = iscc_core.gen_meta_code("test")
-    # ic.print(f"Meta-Code:     {meta_code['iscc']}")
-    # ic.print(f"Structure:     {iscc_core.iscc_explain(meta_code['iscc'])}\n")
-    # ic.print("test Iscc Lib")
-    return iscccore.gen_meta_code("test")
+def test() -> void:
+   ic.print("test call")
+   meta_code = iscccore.gen_meta_code(name="ISCC Test Document!")
+   ic.print(meta_code)
