@@ -2,7 +2,7 @@ from kybra import query,ic,void
 
 import iscc_core as iscccore
 
-metaCodet= {}
+meta_code = {}
 
 @query
 def test() -> void:
