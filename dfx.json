@@ -1,0 +1,12 @@
+{
+    "canisters": {
+        "kybra_integration_test": {
+            "type": "custom",
+            "build": "python -m kybra kybra_integration_test src/main.py src/main.did",
+            "post_install": ".kybra/kybra_integration_test/post_install.sh",
+            "candid": "src/main.did",
+            "wasm": ".kybra/kybra_integration_test/kybra_integration_test.wasm",
+            "gzip": true
+        }
+    }
+}
